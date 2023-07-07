@@ -1,0 +1,29 @@
+
+// Colors
+$white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+$colors: $white, $gray, $black;
+
+$info-bg: #CAE9FF;
+$info-color: #1B4965;
+
+$success-bg: #D4EAC8;
+$sucess-color: #386C0B;
+
+$danger-bg: #F2BAC9;
+$danger-color: #92374D;
+
+
+// Padding and Margin
+$xs: 5px;
+$sm: 10px;
+$md: 15px;
+$lg: 20px;
+$xlg: 35px;
+
+// Transition
+$transition: all .2s ease-in;
+
+// Box Shadow
+$box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);

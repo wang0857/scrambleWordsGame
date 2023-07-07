@@ -1,0 +1,162 @@
+
+// Import variables
+@import 'variables';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+h2 {
+    font-size: 36px;
+    margin: .5rem 0rem;
+}
+
+p {
+    margin: .5rem 0rem;
+    font-size: 18px;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: $lg;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+/* Points and Strikes Results */
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        margin: $sm 0px;
+    }
+
+    p {
+        margin: 0px;
+    }
+}
+
+/* Message */
+.message {
+    display: flex;
+    justify-content: center;
+    border-radius: $xs;
+    margin: $md 0px;
+
+    &.success {
+        background-color: $success-bg;
+        color: $sucess-color;
+    }
+
+    &.info {
+        background-color: $info-bg;
+        color: $info-color;
+    }
+
+    &.danger {
+        background-color: $danger-bg;
+        color: $danger-color;
+    }
+}
+
+/* Forms */
+.scramble {
+    &-letters {
+        text-align: center;
+    }
+
+    &-form {
+        margin: $sm 0px;
+
+        input {
+            width: 100%;
+            border-radius: $sm;
+            border: 1px solid $gray;
+            height: 30px;
+            padding-left: $sm;
+
+            &:disabled {
+                background-color: #d3d3d3;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: none;
+            border: none;
+            margin: $md 0px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #C33149;
+            color: $white;
+            padding: $sm $md;
+            border-radius: $md;
+            transition: $transition;
+
+            &:hover {
+                background-color: darken(#C33149, 10%);
+            }
+
+            &:disabled {
+                background-color: $gray;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &-pass {
+        background-color: $white;
+        color: $black;
+        padding: 2px $sm;
+        border-radius: 3px;
+        margin-right: $xs;
+    }
+}
+
+/* Play Again */
+.playAgain {
+    &-button {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #62B6CB;
+            color: $white;
+            padding: $sm $lg;
+            border-radius: $md;
+            transition: $transition;
+
+            &:hover {
+                background-color: darken(#62B6CB, 10%);
+            }
+        }
+    }
+}
